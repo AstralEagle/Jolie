@@ -10,10 +10,17 @@ a{
     color:white;
     text-decoration: none;
 }
+section{
+    text-align: center;
+}
+h2{
+    font-size: 15px;
+    text-decoration: underline;
+}
 #carousel_component{
     width: 100%;
     display: flex;
-    animation: animationCover 15s;
+    animation: animationCover 20s;
     animation-iteration-count: infinite;
     margin-bottom: -20px;
 }
@@ -37,6 +44,7 @@ a{
     font-size: 9px;
     font-weight: none;
     margin-top: 0px;
+    text-decoration: none;
     font-family: 'Bitter', serif;
 }
 nav{
@@ -52,12 +60,6 @@ nav a{
     font-size: 15px;
     margin: 5px;
 }
-#descJolie{
-    text-align: center;
-}
-#descJolie h2{
-    font-size: 15px;
-}
 #descJolie p{
     font-size: 13px;
 }
@@ -70,21 +72,51 @@ nav a{
 }
 #descJolie ul li img{
     width: 80%;
-    border: 1px white solid;
+}
+#descJolie ul li img:hover{
+    border: 1px solid white;
 }
 #list_party{
-    text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
 }
-#list_party img{
+#list_party a{
     width: 35%;
-    border: 3px white solid;
+    padding-bottom: -10px;
+    margin: 25px;
 }
+#list_party a img{
+    width: 100%;
+    border: 3px white solid;
+    padding: 0px;
+}
+footer{
+    border-top: 1px solid white;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+footer ul li{
+    list-style-type: none;
+    font-size: 9px;
+}
+
+
+
+
+
+
+/*---Responsive---*/
 @media(min-width: 1080px) {
+    h2{
+        font-size: 40px;
+    }
     #carousel_component{
         width: 400%;
-        animation: animationCoverMax 40s;
+        animation: animationCoverMax 30s;
         animation-iteration-count: infinite;
     }
     #title{
@@ -103,9 +135,6 @@ nav a{
     nav a{
         font-size: 25px;
     }
-    #descJolie h2{
-        font-size: 40px;
-    }
     #descJolie p{
         font-size: 35px;
     }
@@ -114,49 +143,23 @@ nav a{
 
 
 /*---Animation---*/
-@keyframes animationCoverMax{
-    0%{
-        transform: translateX(0%);
-    }
-    20%{
-        transform: translateX(0%);
-    }
-    30%{
-        transform: translateX(-25%);
-    }
-    45%{
-        transform: translateX(-25%);
-    }
-    55%{
-        transform: translateX(-50%);
-    }
-    70%{
-        transform: translateX(-50%);
-    }
-    80%{
-        transform: translateX(-75%);
-    }
-    100%{
-        transform: translateX(-75%);
-    }
-}
 @keyframes animationCover{
     0%{
         transform: translateX(0%);
     }
-    20%{
+    22%{
         transform: translateX(0%);
     }
-    30%{
+    28%{
         transform: translateX(-100%);
     }
-    45%{
+    48%{
         transform: translateX(-100%);
     }
-    55%{
+    54%{
         transform: translateX(-200%);
     }
-    70%{
+    74%{
         transform: translateX(-200%);
     }
     80%{
@@ -164,5 +167,31 @@ nav a{
     }
     100%{
         transform: translateX(-300%);
+    }
+}
+@keyframes animationCoverMax{
+    0%{
+        transform: translateX(0%);
+    }
+    22%{
+        transform: translateX(0%);
+    }
+    28%{
+        transform: translateX(-25%);
+    }
+    48%{
+        transform: translateX(-25%);
+    }
+    54%{
+        transform: translateX(-50%);
+    }
+    74%{
+        transform: translateX(-50%);
+    }
+    80%{
+        transform: translateX(-75%);
+    }
+    100%{
+        transform: translateX(-75%);
     }
 }
