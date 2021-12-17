@@ -93,15 +93,34 @@ nav a{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+#info_dispo{
+    margin-top: 40px;
+}
 #desc_soire h2{
     font-size: 20px;
 }
 #desc_soire p{
     font-size: 13px;
 }
+#desc_dispo {
+    display: flex;
+    justify-content: space-between;
+}
+.dispo_list{
+    font-size: 13px;
+    list-style-type: none;
+    text-align: start;
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dispo_list:nth-child(2){
+    text-align: end;
+}
 #info_price{
     border: 1px solid white;
     border-radius: 5px;
+    margin-top: 60px;
 }
 #info_price *{
     margin: 0px;
