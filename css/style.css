@@ -17,6 +17,9 @@ h2{
     font-size: 15px;
     text-decoration: underline;
 }
+#section_cover{
+    overflow: hidden;
+}
 #carousel_component{
     width: 100%;
     display: flex;
